@@ -12,15 +12,16 @@ namespace WoRk_14_02_22
     {
         static void Main(string[] args)
         {
-            var startingDeck = from s in Suits()
-                               from r in Ranks()
-                               select new { Suit = s, Rank = r };
+            //var startingDeck = from s in Suits()
+            //                   from r in Ranks()
+            //                   select new { Suit = s, Rank = r };
 
-            // Display each card that we've generated and placed in startingDeck in the console
-            foreach (var card in startingDeck)
-            {
-                Console.WriteLine(card);
-            }
+            //foreach (var card in startingDeck)
+            //{
+            //    Console.WriteLine(card);
+            //}
+
+            var startingDeck = Suits().SelectMany(suit => Ranks().Select(rank => new { Suit = suit, Rank = rank }));
         }
 
         static IEnumerable<string> Suits()
