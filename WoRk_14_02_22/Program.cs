@@ -26,27 +26,27 @@ namespace WoRk_14_02_22
 
         static IEnumerable<string> Suits()
         {
-            yield return "clubs";
-            yield return "diamonds";
-            yield return "hearts";
-            yield return "spades";
+            yield return "Трефы";
+            yield return "Бубны";
+            yield return "Червы";
+            yield return "Пики";
         }
 
         static IEnumerable<string> Ranks()
         {
-            yield return "two";
-            yield return "three";
-            yield return "four";
-            yield return "five";
-            yield return "six";
-            yield return "seven";
-            yield return "eight";
-            yield return "nine";
-            yield return "ten";
-            yield return "jack";
-            yield return "queen";
-            yield return "king";
-            yield return "ace";
+            yield return "два";
+            yield return "трии";
+            yield return "четыре";
+            yield return "пять";
+            yield return "шесть";
+            yield return "семь";
+            yield return "восемь";
+            yield return "девять";
+            yield return "десять";
+            yield return "Джокер";
+            yield return "Королева";
+            yield return "Король";
+            yield return "Туз";
         }
     }
 }
